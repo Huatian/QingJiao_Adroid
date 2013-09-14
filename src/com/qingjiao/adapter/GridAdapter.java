@@ -3,7 +3,6 @@ package com.qingjiao.adapter;
 import java.util.ArrayList;
 
 import com.qingjiao.bean.MediaBean;
-import com.qingjiao.common.ImageUtils;
 import com.qingjiao.common.LogUtils;
 import com.qingjiao.common.MediaUtils;
 import com.testplayer.R;
