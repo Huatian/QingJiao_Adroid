@@ -42,8 +42,10 @@ public class MainActivity extends Activity implements OnItemClickListener{
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-		Intent intent = new Intent(getApplicationContext(),PlayerActivity.class);
-		intent.putExtra("path", media_paths.get(position));
+		//Intent intent = new Intent(getApplicationContext(),PlayerActivity.class);
+		//intent.putExtra("path", media_paths.get(position));
+		Intent intent = new Intent(getApplicationContext(), GstPlayerActivity.class);
+		intent.putExtra("uri", "file:" + media_paths.get(position));
 		startActivity(intent);
 	}
 	
